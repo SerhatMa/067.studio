@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>067 Studio</title>
+<meta name="description" content="067 Studio is an independent game studio based in Warsaw.">
+<meta name="theme-color" content="#0E0D0B">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0E0D0B;
+  --gold:#C39A3E;
+  --text:#E6DCC6;
+  --dim:#9A8F7A;
+  --line:#2A2620;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text)}
+body{
+  font-family:'Josefin Sans','Futura','Century Gothic',system-ui,sans-serif;
+  font-weight:300;
+  min-height:100vh;min-height:100svh;
+  display:grid;grid-template-rows:1fr auto;
+  -webkit-font-smoothing:antialiased;
+}
+main{
+  display:grid;place-items:center;
+  padding:12vh 16px 8vh;
+}
+.lockup{width:min(300px,72vw);height:auto;display:block}
+.rays polygon{transform-origin:160px 150px;animation:rise 1.6s cubic-bezier(.2,.7,.2,1) both}
+.disc{animation:fade 1.2s ease-out both}
+.word{animation:fade 1.4s .6s ease-out both}
+@keyframes rise{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.tag{
+  margin-top:40px;
+  font-size:15px;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--dim);text-align:center;
+}
+.mail{
+  display:inline-block;margin-top:28px;
+  font-size:18px;letter-spacing:.08em;font-weight:400;
+  color:var(--gold);text-decoration:none;
+  border-bottom:1px solid currentColor;padding-bottom:4px;
+}
+.mail:hover{color:var(--text)}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:6px}
+.center{text-align:center}
+footer{
+  border-top:1px solid var(--line);
+  padding:28px 16px 32px;
+  font-size:13px;line-height:1.7;letter-spacing:.03em;color:var(--dim);
+}
+.legal{
+  max-width:960px;margin:0 auto;
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 40px;
+}
+.legal strong{color:var(--text);font-weight:400}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="center">
+    <svg class="lockup" viewBox="0 0 320 344" role="img" aria-labelledby="t">
+      <title id="t">067 Studio</title>
+      <g class="rays" fill="#C39A3E">
+        <polygon points="203.54,143.63 261.33,126.61 201.92,136.64"/>
+        <polygon points="201.77,136.17 237.32,117.18 198.97,129.56"/>
+        <polygon points="198.73,129.12 247.22,93.36 194.82,123.11"/>
+        <polygon points="194.52,122.72 221.43,92.71 189.63,117.47"/>
+        <polygon points="189.26,117.14 222.59,66.94 183.53,112.82"/>
+        <polygon points="183.11,112.56 198.14,75.16 176.71,109.3"/>
+        <polygon points="176.25,109.11 190.41,50.54 169.39,107.01"/>
+        <polygon points="168.91,106.91 170.24,66.63 161.78,106.04"/>
+        <polygon points="161.29,106.02 154.56,46.14 154.12,106.39"/>
+        <polygon points="153.63,106.46 141.1,68.15 146.64,108.08"/>
+        <polygon points="146.17,108.23 106.08,22.97 139.56,111.03"/>
+        <polygon points="139.12,111.27 114.25,79.55 133.11,115.18"/>
+        <polygon points="132.72,115.48 89.07,73.94 127.47,120.37"/>
+        <polygon points="127.14,120.74 92.91,99.45 122.82,126.47"/>
+        <polygon points="122.56,126.89 67.34,102.78 119.3,133.29"/>
+        <polygon points="119.11,133.75 79.67,125.44 117.01,140.61"/>
+      </g>
+      <g class="disc">
+        <path fill="#C39A3E" d="M 124 150 A 36 36 0 0 1 196 150 Z"/>
+        <path fill="none" stroke="#C39A3E" stroke-width="2.2" d="M 44 150 A 116 116 0 0 1 276 150"/>
+        <rect fill="#C39A3E" x="30" y="150" width="260" height="5"/>
+        <g fill="#C39A3E">
+          <rect x="60" y="162" width="200" height="6"/>
+          <rect x="84" y="176" width="152" height="4.6" opacity="0.78"/>
+          <rect x="106" y="188" width="108" height="3.6" opacity="0.58"/>
+          <rect x="126" y="198" width="68" height="3" opacity="0.4"/>
+          <rect x="144" y="206" width="32" height="2.4" opacity="0.26"/>
+        </g>
+      </g>
+      <g class="word">
+        <rect fill="#C39A3E" x="78" y="246" width="164" height="1.4" opacity="0.55"/>
+        <text x="160" y="292" text-anchor="middle" font-family="'Josefin Sans','Futura','Century Gothic',sans-serif" font-size="44" font-weight="600" letter-spacing="6" fill="#C39A3E">067</text>
+        <text x="160" y="320" text-anchor="middle" font-family="'Josefin Sans','Futura','Century Gothic',sans-serif" font-size="16" font-weight="400" letter-spacing="10.5" fill="#C39A3E" opacity="0.82">STUDIO</text>
+      </g>
+    </svg>
+    <p class="tag">Independent games &middot; Warszawa</p>
+    <a class="mail" href="mailto:info@067.studio">info@067.studio</a>
+  </div>
+</main>
+<footer>
+  <div class="legal" lang="pl">
+    <p><strong>067 Studio sp. z o.o.</strong><br>
+      ul. Floriańska 6 lok. U2<br>
+      03-707 Warszawa, Polska</p>
+    <p>Sąd Rejonowy dla m.st. Warszawy w Warszawie,<br>
+      XIV Wydział Gospodarczy KRS<br>
+      KRS 0001271468</p>
+    <p>NIP 1133214953 &middot; REGON 545928600<br>
+      Kapitał zakładowy 5&nbsp;000,00&nbsp;zł<br>
+      &copy; 2026 067 Studio</p>
+  </div>
+</footer>
+</body>
+</html>

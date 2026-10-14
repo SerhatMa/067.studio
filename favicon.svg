@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 232" width="320" height="232" role="img" aria-label="067 Studio — rising sun mark">
+  <title>067 Studio</title>
+  <g>
+    <!-- ray fan. the ray at bearing 067 differs only in length -->
+    <g fill="#C39A3E">
+      <polygon points="203.54,143.63 261.33,126.61 201.92,136.64"/>
+      <polygon points="201.77,136.17 237.32,117.18 198.97,129.56"/>
+      <polygon points="198.73,129.12 247.22,93.36 194.82,123.11"/>
+      <polygon points="194.52,122.72 221.43,92.71 189.63,117.47"/>
+      <polygon points="189.26,117.14 222.59,66.94 183.53,112.82"/>
+      <polygon points="183.11,112.56 198.14,75.16 176.71,109.3"/>
+      <polygon points="176.25,109.11 190.41,50.54 169.39,107.01"/>
+      <polygon points="168.91,106.91 170.24,66.63 161.78,106.04"/>
+      <polygon points="161.29,106.02 154.56,46.14 154.12,106.39"/>
+      <polygon points="153.63,106.46 141.1,68.15 146.64,108.08"/>
+      <polygon points="146.17,108.23 106.08,22.97 139.56,111.03"/>
+      <polygon points="139.12,111.27 114.25,79.55 133.11,115.18"/>
+      <polygon points="132.72,115.48 89.07,73.94 127.47,120.37"/>
+      <polygon points="127.14,120.74 92.91,99.45 122.82,126.47"/>
+      <polygon points="122.56,126.89 67.34,102.78 119.3,133.29"/>
+      <polygon points="119.11,133.75 79.67,125.44 117.01,140.61"/>
+    </g>
+
+    <!-- half disc -->
+    <path fill="#C39A3E" d="M 124 150 A 36 36 0 0 1 196 150 Z"/>
+
+    <!-- containing arc -->
+    <path fill="none" stroke="#C39A3E" stroke-width="2.2" d="M 44 150 A 116 116 0 0 1 276 150"/>
+
+    <!-- horizon -->
+    <rect fill="#C39A3E" x="30" y="150" width="260" height="5"/>
+
+    <!-- streamline bars -->
+    <g fill="#C39A3E">
+      <rect x="60" y="162" width="200" height="6" opacity="1.0"/>
+      <rect x="84" y="176" width="152" height="4.6" opacity="0.78"/>
+      <rect x="106" y="188" width="108" height="3.6" opacity="0.58"/>
+      <rect x="126" y="198" width="68" height="3" opacity="0.4"/>
+      <rect x="144" y="206" width="32" height="2.4" opacity="0.26"/>
+    </g>
+  </g>
+</svg>
