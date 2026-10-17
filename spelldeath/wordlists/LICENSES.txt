@@ -1,0 +1,62 @@
+Spell Death — word lists for the gameplay languages
+====================================================
+
+Each language's word store (<code>.bin) is built from the source below by
+tools/gameplay_langs/ (normalize, expand, pack). The stores are modified
+versions of the sources: letters are upper-cased and folded to the tile
+alphabet, offensive words are removed, and words longer than the cap are cut.
+
+English (en.bin)
+  NWL2023, NASPA Word List 2023. Shipped since before gameplay languages.
+  Licence status: see docs/research/gameplay-languages.md section 8.
+
+German (de.bin, compounds_de.txt)
+  enz/german-wordlist (Tanglet), https://github.com/enz/german-wordlist
+  Licence: CC0 1.0 Universal (public domain dedication).
+
+Spanish (es.bin, compounds_es.txt)
+  RLA-ES hunspell es_ES (LibreOffice dictionaries), expanded to full forms.
+  Licence: tri-licensed GPL 3+ / LGPL 3+ / MPL 1.1+; used under MPL 1.1.
+
+French (fr.bin, compounds_fr.txt)
+  Dicollecte / Grammalecte hunspell fr (LibreOffice dictionaries), expanded.
+  Licence: MPL 2.0.
+
+Portuguese, Brazil (pt_BR.bin, compounds_pt_BR.txt)
+  fserb/pt-br lexicon and conjugations, https://github.com/fserb/pt-br
+  Licence: MIT. Copyright 2021 Fernando Serboncini.
+  Plus VERO hunspell pt_BR forms that also occur in the fserb corpus list.
+  Licence: LGPL 3 / MPL 1.1; used under MPL 1.1.
+
+Polish (pl.bin, compounds_pl.txt)
+  SJP.PL, "Słownik SJP.PL - wersja do gier słownych" (2026-09-01), https://sjp.pl
+  Licence: GPL 2 or Creative Commons Attribution 4.0 International; used
+  under CC BY 4.0.
+
+Russian (ru.bin, compounds_ru.txt)
+  Russian hunspell dictionary ru_RU (LibreOffice dictionaries), expanded.
+  Copyright (c) 1997-2008, Alexander I. Lebedev. All rights reserved.
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the copyright notice is retained,
+  the conditions are reproduced in the documentation, modified versions are
+  clearly marked as such (this one is: expanded, upper-cased, filtered), and
+  the name of Alexander I. Lebedev is not used to endorse derived products.
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  AND ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED.
+
+Turkish (tr.bin)
+  TDD hunspell-tr, https://github.com/tdd-ai/hunspell-tr, expanded.
+  Licence: MPL 2.0.
+  Filtered to forms seen in real text: FrequencyWords (Hermit Dave),
+  https://github.com/hermitdave/FrequencyWords, content CC BY-SA 4.0.
+  The filtered Turkish list is shared under CC BY-SA 4.0 and MPL 2.0.
+  Root list for compounds_tr.txt (if used): Zemberek NLP master dictionary,
+  https://github.com/ahmetaa/zemberek-nlp. Licence: Apache 2.0.
+  Copyright 2018 Ahmet A. Akın, Mehmet D. Akın.
+
+Offensive-word filters (offensive_<code>.txt)
+  Based on "List of Dirty, Naughty, Obscene, and Otherwise Bad Words",
+  https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
+  Licence: Creative Commons Attribution 4.0 International (CC BY 4.0).
+  Changed: upper-cased, folded to the tile alphabet, and curated (entries
+  that are not offensive in game use were removed; each file lists them).
